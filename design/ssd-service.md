@@ -6,7 +6,7 @@
 @startuml
 ditaa
 +-------------------------------------+
-|        interface / log / ...        | framework
+|    servie / interface / log / ...   | framework
 +-------------------------------------+
 | config / log / persistence / script | engine
 +-------------------------------------+

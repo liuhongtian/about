@@ -31,8 +31,5 @@ end
 --r = clone(data_table, value)
 --print(cjson.encode(value))
 --print(cjson.encode(ssd_table))
-
-print(getmetatable(value))
-
-
--- print(cjson.encode(value))
+--print(value.tostring)
+print(cjson.encode(ssd_table))

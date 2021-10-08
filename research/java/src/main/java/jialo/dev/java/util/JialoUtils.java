@@ -91,7 +91,11 @@ public class JialoUtils {
                             }
                             break;
                         } else { // 下一层
-                            foundObj = ((Map<String, Object>) foundObj).get(p);
+                            if (index >= 0) { // 数组
+                                foundObj = ((List) ((Map<String, Object>) foundObj).get(p)).get(index);
+                            } else { // 对象
+                                foundObj = ((Map<String, Object>) foundObj).get(p);
+                            }
                         }
                     }
                 } else { // 没有下层节点，直接替换

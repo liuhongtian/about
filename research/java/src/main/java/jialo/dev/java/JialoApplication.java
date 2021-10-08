@@ -24,7 +24,7 @@ public class JialoApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		logger.info(appName + " to be running ... ...");
-		JialoUtils.postData("/level1b/level2a(0)");
+		JialoUtils.postData("/level1b(0)/level2a(0)");
 		System.out.println("exiting ... ...");
 		System.exit(0);
 	}

@@ -1,8 +1,11 @@
 <?php
-$uri_string = "a/b/d(1)";
-$data_json = '{"e":"e1","f":"f1"}';
+$uri_string = "/level1b(0)/level2a(0)";
+$data_json = '{
+    "la": "the",
+    "lb": "one"
+}';
 $data_array = json_decode($data_json, true);
-$ssd_filename_default = "default.json";
+$ssd_filename_default = "origin.json";
 $ssd_json_default = file_get_contents($ssd_filename_default);
 $ssd_array = json_decode($ssd_json_default, true);
 

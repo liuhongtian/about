@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: jialo
+server:
+  port: 8888
+
+logging:
+  level:
+    root: INFO
+  file:
+    name: logs/jialo.log
